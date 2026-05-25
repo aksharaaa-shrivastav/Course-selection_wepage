@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Selection Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">EduPortal</div>
+      <h1>Course Selection Portal</h1>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#" class="nav-link active" onclick="setActive(this)">Home</a></li>
+      <li><a href="#courses" class="nav-link" onclick="setActive(this)">Courses</a></li>
+      <li><a href="#about" class="nav-link" onclick="setActive(this)">About</a></li>
+      <li><a href="#contact" class="nav-link" onclick="setActive(this)">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Find Your Perfect Course</h2>
+      <p>Browse our available courses and enroll in the one that suits you best.</p>
+    </section>
+
+    <div id="selected-banner" class="selected-banner hidden">
+      <span>✅ You have selected: <strong id="selected-course-name"></strong></span>
+    </div>
+
+    <section id="courses" class="courses-section">
+      <h2 class="section-title">Available Courses</h2>
+      <div class="course-grid">
+
+        <div class="course-card">
+          <div class="course-code">CS101</div>
+          <h3 class="course-name">Introduction to Computer Science</h3>
+          <p class="course-desc">Learn the fundamentals of computing, algorithms, and problem-solving with hands-on projects.</p>
+          <p class="instructor">👤 Dr. Aisha Khan — Dept. of Computer Science</p>
+          <button class="select-btn" onclick="selectCourse(this, 'Introduction to Computer Science')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <div class="course-code">WD202</div>
+          <h3 class="course-name">Fundamentals of Web Development</h3>
+          <p class="course-desc">Build modern websites using HTML, CSS, and JavaScript with responsive design principles.</p>
+          <p class="instructor">👤 Prof. Rahul Mehta — Dept. of IT</p>
+          <button class="select-btn" onclick="selectCourse(this, 'Fundamentals of Web Development')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <div class="course-code">DS305</div>
+          <h3 class="course-name">Data Structures & Algorithms</h3>
+          <p class="course-desc">Master essential data structures like trees, graphs, and sorting algorithms used in real-world applications.</p>
+          <p class="instructor">👤 Dr. Priya Sharma — Dept. of Computer Science</p>
+          <button class="select-btn" onclick="selectCourse(this, 'Data Structures & Algorithms')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <div class="course-code">AI410</div>
+          <h3 class="course-name">Artificial Intelligence Basics</h3>
+          <p class="course-desc">Explore AI concepts including machine learning, neural networks, and natural language processing.</p>
+          <p class="instructor">👤 Prof. Neeraj Gupta — Dept. of AI & ML</p>
+          <button class="select-btn" onclick="selectCourse(this, 'Artificial Intelligence Basics')">Select Course</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="info-section">
+      <h2 class="section-title">About</h2>
+      <p>EduPortal is a student-friendly platform designed to help you explore and enroll in courses that match your interests and career goals.</p>
+    </section>
+
+    <section id="contact" class="info-section">
+      <h2 class="section-title">Contact</h2>
+      <p>📧 support@eduportal.edu &nbsp;|&nbsp; 📞 +91-9876543210 &nbsp;|&nbsp; 🏛️ Room 204, Main Building</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 EduPortal. All rights reserved. | Fundamentals of Web Development</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
